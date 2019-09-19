@@ -1,0 +1,14 @@
+<html>
+	<body>
+		<h1>Ham spam detection</h1>
+		<form action="{{ url_for('predict')}}"method="post">
+			<label >Text</label><br>
+			<input type="text" name="mail" placeholder="mail" required="required" />
+			<button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+		</form>
+		<br>
+		<br>
+		   {{ prediction_text }}
+
+	</body>
+</html>
